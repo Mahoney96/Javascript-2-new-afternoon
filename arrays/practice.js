@@ -51,6 +51,7 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 
 
 
+
 ////////// PROBLEM 4 //////////
 
 // Do not edit the code below.
@@ -78,6 +79,10 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 */
 
 //Code Here
+
+function evenFinder(nums){
+
+}
 
 
 

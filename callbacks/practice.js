@@ -102,10 +102,22 @@ contains(names, 'Colt', function(result){
 
 /*
   Write a function called uniq that takes in an array and a callback function.
-  Remove any duplicate values from the array, and invoke the callback with the modified array as an argument.
+  Remove any duplicate values from the array, and invoke the callback with the modified array as an argument. 
+  (Note: I used 'j' as a 2nd variable, as 'i' was already in use). Rob said 'j' is next used after the 'i' by developers. 
 */
 
 //Code Here
+
+function uniq(array,pizza){
+  for(let i = 0; i < array.length; i++){
+    for(let j = array.length - 1; j >= 0; j--){
+      if (array[i] === array[j] && i !== j){
+        array.splice(j,1)
+      }
+    }
+  }
+  pizza(array)
+}
 
 // Do not edit the code below.
 uniq(names, function(uniqArr){
